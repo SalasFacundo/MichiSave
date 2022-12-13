@@ -134,6 +134,10 @@ input, textarea, button{
     resize:none;
 }
 
+button{
+    cursor: pointer; 
+}
+
 button:active{
     background-color: rgb(209, 204, 204);
     color: black;
