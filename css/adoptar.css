@@ -48,6 +48,7 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     background-color: white; 
     border-bottom: 1px solid rgba(45,45,45,.1);
+    
 }
 
 
@@ -101,8 +102,7 @@ nav span{
 }
 
 .container{
-    background-color: rgb(249, 250, 255);
-    background-image: url("img/gatosFondo.jpg");
+    background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
 }
 
@@ -118,6 +118,9 @@ nav span{
     height: 300px;
     border: 5px solid rgba(34, 33, 33, 0.1);
     border-radius: 20px;
+    
+    background-color:white;
+    
 
 }
 
