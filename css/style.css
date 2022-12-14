@@ -39,33 +39,6 @@
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
 }
-nav{
-    display: grid;
-    position: sticky; 
-    top: 0; 
-    grid-template-columns: repeat(2, 1fr);
-    background-color: white; 
-    border-bottom: 1px solid rgba(45,45,45,.1);
-}
-
-
-#links{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-#links a{
-    margin-right: 80px;
-    text-decoration: none;
-    color: grey;
-    border-bottom: 2px solid transparent;
-}
-
-#links a:hover{
-    transition: 1s;
-    border-color: grey;   
-}
 
 .title{
     margin: 60px auto;
