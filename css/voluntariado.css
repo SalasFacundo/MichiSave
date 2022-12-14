@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-column: 1/6;
+    width: 100%;
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
     margin: auto;
@@ -31,7 +32,7 @@
 #email2,
 #ubicacion,
 #mapa{
-  /*  border: 1px solid black;  */
+   /* border: 1px solid black;  */ 
 }
 
 .header,
@@ -72,6 +73,7 @@
     border: 1px solid rgb(167, 165, 165);
     border-style: dashed;
     border-radius: 12px;
+    margin: auto;
     margin-top: 120px;
 }
 
