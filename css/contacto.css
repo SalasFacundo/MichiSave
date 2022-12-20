@@ -11,6 +11,8 @@
     grid-column: 1/6;
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
 }
 
 #contactos{

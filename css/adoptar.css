@@ -63,6 +63,9 @@
 .container{
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
 .availables{
