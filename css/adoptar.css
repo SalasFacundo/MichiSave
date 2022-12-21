@@ -5,7 +5,7 @@
     font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container, .available{
+.available{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -43,7 +43,9 @@
 /* INICIO ESTILOS VISUALES */
 
 .title{
-    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
 }
 #separador{
     display: flex;
@@ -60,7 +62,7 @@
     margin-right: 30px;
 }
 
-.container{
+.pagina{
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
     position: relative;

@@ -5,7 +5,7 @@
     font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container{
+.pagina{
     display: grid;
     grid-template-columns: 1fr;
     grid-column: 1/6;
@@ -21,7 +21,7 @@
 .available,
 #links,
 #logo,
-.container,
+.pagina,
 #formulario,
 #contactos,
 .imagen,
