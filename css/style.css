@@ -6,7 +6,7 @@
 }
 
  /* INICIO MAQUETADO CSS GRID */
-.container, .opinions{
+.opinions{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -35,7 +35,7 @@
     grid-column: 1/6;
 }
 
-.container{
+.pagina{
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
     position: relative;
@@ -44,7 +44,10 @@
 }
 
 .title{
-    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+
 }
 
 #separador{
@@ -126,11 +129,6 @@ display: inline-block;
 iframe{
     width: 300%;
 }
-
-asd{
-    border-bottom: 2px solid rgb(94, 91, 91);
-}
-
 
 
 /* FIN ESTILOS VISUALES */

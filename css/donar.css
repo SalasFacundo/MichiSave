@@ -32,12 +32,28 @@
 .pagina{
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
 .title{
+    
     display: flex;
     justify-content: center;
-    margin: 60px 0;
+}
+
+.title h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 28px;    
+}
+
+.title span{
+    display: block;
+    font-size: 20px;
+    color: grey;
 }
 
 #separador{
@@ -56,9 +72,41 @@
     margin-right: 30px;
 }
 
+.card-title {
+    
+    font-size: 30px;
+}
 
+/* .card-body {
+    
+    height: 220px;
+} */
 
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 220px;
+}
 
+.form-group{
+    margin-top: 40px;
+}
+
+.btn-secondary {
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid rgb(206, 212, 218);
+  }
 
 /* FIN MAQUETADO CSS GRID */
 
@@ -74,24 +122,6 @@ iframe{
     width: 300%;
 }
 
-
-.buttonNav{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 20px;
-    border: 1px solid black;
-    padding: 8px 8px 2px 8px;
-    border-style: dashed;
-    border-radius: 8px;
- }
- 
- .line{
-     width: 30px;
-     height: 5px;
-     background-color: grey;
-     margin-bottom: 6px;
- }
 
  .space {
     margin-right: 40px;
@@ -117,8 +147,8 @@ iframe{
     border-color: grey;  
  }
 
- .modificarCard{
-
+ .modificarCards{
+    margin-top: 100px;
  }
  
  
