@@ -143,3 +143,20 @@ input[type=number]::-webkit-inner-spin-button {
 iframe{
     width: 100%;
 }
+
+
+
+ .modificarNavbar span{
+    color: black;
+ }
+
+ .modificarNavbar a{
+    color: grey;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+ }
+
+ .modificarNavbar a:hover{
+    transition: 1s;
+    border-color: grey;  
+ }
