@@ -13,6 +13,9 @@
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
     margin: auto;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
 .header,
@@ -38,8 +41,7 @@
 .header,
 .title,
 #separador,
-.footer
-{   
+.footer{   
     grid-column: 1/6;
 }
 
