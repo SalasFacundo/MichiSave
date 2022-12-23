@@ -6,17 +6,13 @@
 }
 
 .pagina{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column: 1/6;
-    width: 100%;
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
-    margin: auto;
     position: relative;
     min-height: 100vh;
     padding-bottom: 200px;
 }
+
 
 .header,
 .title,
@@ -51,7 +47,10 @@
 /* FIN MAQUETADO CSS GRID */
 
 .title{
-    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
 }
 
 #separador{
@@ -77,11 +76,11 @@
     margin-top: 120px;
 }
 
-form{
+/* form{
     float: left;
     width: 90%;
     height: 100%;
-}
+} */
 
 input[type=text],input[type=number], input[type=email], textarea, button{
     display: block;
@@ -96,9 +95,9 @@ input[type=text],input[type=number], input[type=email], textarea, button{
     resize:none;
 }
 
-input[type=file]{
+/* input[type=file]{
     display: none;
-}
+} */
 
 #file{
 
@@ -147,4 +146,62 @@ input[type=number]::-webkit-inner-spin-button {
 iframe{
     width: 200%;
 }
+
+
+/* .estilosForm{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.estilosForm input, .estilosForm textarea {
+    width: 100%;
+}
+ */
+
+
+
+/* .form-group{
+    background-color: green;
+    width: 100%;
+}
+ */
+
+ form{
+    margin: auto;
+    margin-top: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(167, 165, 165);
+    border-style: dashed;
+    border-radius: 12px;
+    min-width: 400px;
+ }
+
+ form > input{
+    width: 100%;
+ }
+
+ .modificarFormGroup{
+    display: flex;
+    justify-content: center;    
+ }
+
+ .checkGroup{
+    display: flex;
+    justify-content: start;
+ }
+
+ .modificarFile{
+    margin: 60px auto;
+    width: 80%;
+ }
+ 
+ @media (width<1052px){
+    form{
+        width: 400px;
+     }
+ }
 
