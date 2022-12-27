@@ -73,6 +73,7 @@
     margin-top: 20px;
     width: 732px;
     height: 781px;
+    transition: all .2s;
 }
 
 .opinion{    
@@ -155,8 +156,7 @@ iframe{
 
  @media (width<750px){
     .presentation img{
-        width: 332px;
-        height: 381px;
+        transform: scale(.7);
     }  
  }
  
