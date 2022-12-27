@@ -71,8 +71,9 @@
 
 .presentation img{
     margin-top: 20px;
-    width: 732px;
+    width: 70%;
     height: 781px;
+    max-width: 732px;
     transition: all .2s;
 }
 
@@ -157,6 +158,7 @@ iframe{
  @media (width<750px){
     .presentation img{
         transform: scale(.7);
+        width: 120%;
     }  
  }
  
