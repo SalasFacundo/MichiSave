@@ -22,7 +22,6 @@
 
 
 #contactos{
-    grid-template-rows: repeat(5, 1fr);
     margin: auto 0;
 }
 
@@ -81,12 +80,15 @@
     border-radius: 12px;
     margin: 10% 25%;
     padding-bottom: 5%;
+    min-width: 400px;
+    max-height: 900px;
 }
 
 form{
     float: left;
     width: 80%;
     height: 100%;
+    min-width: 340px;
 }
 
 input, textarea, button{
@@ -131,7 +133,7 @@ button:active{
 }
 
 #mapa iframe{
-    width: 50%;
+    width: 400px;
     height: 300px;
     border-radius: 5%;
 }
@@ -140,9 +142,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 } 
 
-iframe{
-    width: 100%;
-}
+
 
 
 
@@ -159,4 +159,25 @@ iframe{
  .modificarNavbar a:hover{
     transition: 1s;
     border-color: grey;  
+ }
+
+ @media (width<1090px){
+    .pagina{
+        grid-template-columns: 1fr;
+        
+    }
+
+    #formulario{       
+       margin: auto;
+       margin-bottom: 60px;
+    }
+
+    #contactos{       
+        margin: auto;
+        margin-bottom: 200px;
+     }
+
+    #mapa iframe{
+        width: 100%;
+    }
  }
