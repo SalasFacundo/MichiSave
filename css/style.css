@@ -6,7 +6,7 @@
 }
 
  /* INICIO MAQUETADO CSS GRID */
-.opinions{
+.cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -41,11 +41,13 @@
     position: relative;
     min-height: 100vh;
     padding-bottom: 200px;
+    width: 100%;
 }
 
 .title{
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 60px 0;
 }
 
@@ -145,6 +147,19 @@ iframe{
     border-color: grey;  
  }
 
+ @media (width<1266px){
+    .cards{       
+        grid-template-columns: repeat(1, 1fr);
+     }    
+ }
+
+ @media (width<750px){
+    .presentation img{
+        width: 332px;
+        height: 381px;
+    }  
+ }
+ 
 /* FIN ESTILOS VISUALES */
 
 
