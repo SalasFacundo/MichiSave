@@ -68,3 +68,49 @@ body{
     margin-top: 16px;
 }
 
+.card-deck h4{
+    text-align: center;
+}
+
+
+.botonHembra{
+    background-color: pink;
+    border: none;
+    color: white;
+}
+
+.botonMacho{
+    background-color: lightblue;
+    border: none;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    list-style: none;
+}
+
+
+@media (width<1342px){
+    .lista{
+        text-align:center;
+    }
+
+    ul{
+        display:inline-block;
+        text-align: left;
+        
+    }    
+}
+
+@media (width>576px) and (width<1000px){
+    .botones{
+        display: flex;
+        flex-direction: column;
+    }    
+    .botones button{
+        margin-bottom: 10px;
+    }
+}
