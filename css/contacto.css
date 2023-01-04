@@ -161,6 +161,10 @@ input[type=number]::-webkit-inner-spin-button {
     border-color: grey;  
  }
 
+ .space {
+    margin-right: 10px;
+}
+
  @media (width<1090px){
     .pagina{
         grid-template-columns: 1fr;

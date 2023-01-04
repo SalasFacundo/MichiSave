@@ -218,6 +218,10 @@ iframe{
     transition: 1s;
     border-color: grey;  
  }
+
+ .space {
+    margin-right: 10px;
+}
  
  @media (width<1052px){
     form{

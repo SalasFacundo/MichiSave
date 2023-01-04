@@ -20,15 +20,6 @@
 /*     border: 1px solid black;
  */}
 
-.header,
-.title,
-#separador,
-.footer
-{
-   
-    grid-column: 1/6;
-}
-
 .pagina{
     background-image: url("../img/gatosFondo.jpg");
     background-attachment: fixed;
@@ -101,7 +92,7 @@
 .form-control:focus {
     box-shadow: none;
     border: 1px solid rgb(206, 212, 218);
-  }
+}
 
 /* FIN MAQUETADO CSS GRID */
 
@@ -118,36 +109,35 @@ iframe{
 }
 
 
- .space {
+.space {
     margin-right: 10px;
- }
- 
+}
+
 .modificarNavbar img{
     vertical-align: text-bottom;
     width: 100%;
 }
 
- .modificarNavbar span{
+.modificarNavbar span{
     color: black;
- }
+}
 
- .modificarNavbar a{
+.modificarNavbar a{
     color: grey;
     text-decoration: none;
     border-bottom: 2px solid transparent;
- }
+}
 
- .modificarNavbar a:hover{
+.modificarNavbar a:hover{
     transition: 1s;
     border-color: grey;  
- }
+}
 
- .modificarCards{
+.modificarCards{
     margin-top: 100px;
- }
- 
- 
- .centrado{
+}
+
+.centrado{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;

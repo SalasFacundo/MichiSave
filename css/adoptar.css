@@ -14,12 +14,10 @@
 .title,
 .availables,
 .available,
-#links,
 #logo,
 .footer,
 .imagen,
 .descripcion,
-.links,
 #separador{
 /*      border: 1px solid black; */
 }
@@ -72,7 +70,6 @@ body{
     text-align: center;
 }
 
-
 .botonHembra{
     background-color: pink;
     border: none;
@@ -85,32 +82,48 @@ body{
 
 }
 
-ul{
+.disponibles ul{
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
     list-style: none;
 }
 
-
-@media (width<1342px){
-    .lista{
-        text-align:center;
-    }
-
-    ul{
-        display:inline-block;
-        text-align: left;
-        
-    }    
+.disponibles li{
+    background-color: rgb(211, 206, 206);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
 }
 
-@media (width>576px) and (width<1000px){
+.links{
+    color: red;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.botones{
+    width: 100%;
+}
+
+.lista{
+    text-align:center;
+}
+
+@media (width>575px) and (width<1000px){
     .botones{
         display: flex;
         flex-direction: column;
     }    
     .botones button{
         margin-bottom: 10px;
+        width: 90%;
     }
+
+    .disponibles ul{
+        display:inline-block;        
+    }  
+    
 }
