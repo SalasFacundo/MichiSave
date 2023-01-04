@@ -82,6 +82,10 @@ body{
 
 }
 
+.disponible{
+    margin: 60px;
+}
+
 .disponibles ul{
     display: flex;
     justify-content: space-around;
@@ -111,6 +115,47 @@ body{
 .lista{
     text-align:center;
 }
+
+.space {
+    margin-right: 10px;
+}
+
+nav img{
+    float: left; 
+    width: 100px;
+    height: 100px;   
+ }
+
+nav span{
+display: inline-block;
+   margin-top: 4%;  
+   font-weight: bold;
+   font-size: 18px;
+}
+iframe{
+    width: 300%;
+}
+
+.modificarNavbar img{
+    vertical-align: text-bottom;
+    width: 100%;
+}
+
+ .modificarNavbar span{
+    color: black;
+ }
+
+ .modificarNavbar a{
+    color: grey;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+ }
+
+ .modificarNavbar a:hover{
+    transition: 1s;
+    border-color: grey;  
+ }
+
 
 @media (width>575px) and (width<1000px){
     .botones{
