@@ -1,187 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.pagina{
-    display: grid;
-    grid-template-columns: 60% auto;
-    grid-column: 1/6;
-    background-image: url("../img/gatosFondo.jpg");
-    background-attachment: fixed;
-    position: relative;
-    min-height: 100vh;
+.navbar {
+  display: grid;
+  grid-column: 1/6;
 }
 
-.navbar{
-    display: grid;
-    grid-column: 1/6 ;
+.modificarNavbar span {
+  color: black;
 }
-
-
-#contactos{
-    margin: auto 0;
+.modificarNavbar a {
+  color: grey;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
-
-.header,
-.title,
-.availables,
-.available,
-#links,
-#logo,
-.pagina,
-#formulario,
-#contactos,
-.imagen,
-.descripcion,
-.links,
-#separador,
-#telefono2,
-#email2,
-#ubicacion,
-#mapa{
-  /*  border: 1px solid black;  */
+.modificarNavbar a:hover {
+  transition: 1s;
+  border-color: grey;
+}
+.modificarNavbar .space {
+  margin-right: 10px;
 }
 
 .header,
 .title,
 #separador,
-.footer
-{   
-    grid-column: 1/6;
+.footer {
+  grid-column: 1/6;
 }
 
-
-
-/* FIN MAQUETADO CSS GRID */
-
-.title{
-    margin: 60px auto;
+.pagina {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-column: 1/6;
+  background-image: url("../img/gatosFondo.jpg");
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+.pagina .title {
+  margin: 60px auto;
 }
 
-#separador{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
+#formulario {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(167, 165, 165);
+  border-style: dashed;
+  border-radius: 12px;
+  margin: 10% 25%;
+  padding-bottom: 5%;
+  min-width: 400px;
+  max-height: 900px;
+}
+#formulario form {
+  float: left;
+  width: 80%;
+  height: 100%;
+  min-width: 340px;
+}
+#formulario form input, #formulario form textarea, #formulario form button {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid grey;
+  outline: none;
+  padding: 20px;
+  background-color: white;
+  resize: none;
+}
+#formulario form button {
+  cursor: pointer;
+}
+#formulario form button:active {
+  background-color: rgb(209, 204, 204);
+  color: black;
 }
 
-#separador hr{
-    width: 50%;
+#contactos {
+  margin: auto 0;
 }
-
-#formulario{
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgb(167, 165, 165);
-    border-style: dashed;
-    border-radius: 12px;
-    margin: 10% 25%;
-    padding-bottom: 5%;
-    min-width: 400px;
-    max-height: 900px;
+#contactos img {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
 }
-
-form{
-    float: left;
-    width: 80%;
-    height: 100%;
-    min-width: 340px;
+#contactos #telefono2, #contactos #email2 {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 35px;
 }
-
-input, textarea, button{
-    display: block;
-    margin: auto;
-    margin-top: 60px;
-    border-radius: 20px;
-    width: 100%;
-    border: 1px solid grey;
-    outline: none;
-    padding: 20px;
-    background-color: white;
-    resize:none;
+#contactos .datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
 }
-
-button{
-    cursor: pointer; 
-}
-
-button:active{
-    background-color: rgb(209, 204, 204);
-    color: black;
-}
-
-#telefono2, #email2{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 35px;
-}
-
-#contactos img{
-    width: 80px;
-    height: 80px;
-    vertical-align: middle;
-}
-
-.datos{
-    display: flex;
-    flex-direction : column;
-    justify-content: center;
-    margin-left: 10px;
-}
-
-#mapa iframe{
-    width: 400px;
-    height: 300px;
-    border-radius: 5%;
+#contactos #mapa iframe {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
 }
 
 input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-} 
-
-
-
-
-
- .modificarNavbar span{
-    color: black;
- }
-
- .modificarNavbar a{
-    color: grey;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
- }
-
- .modificarNavbar a:hover{
-    transition: 1s;
-    border-color: grey;  
- }
-
- .space {
-    margin-right: 10px;
+  -webkit-appearance: none;
 }
 
- @media (width<1090px){
-    .pagina{
-        grid-template-columns: 1fr;
-        
-    }
+@media (width < 1090px) {
+  .pagina {
+    grid-template-columns: 1fr;
+  }
+  #formulario {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  #contactos {
+    margin: auto;
+    margin-bottom: 200px;
+  }
+  #mapa iframe {
+    width: 100%;
+  }
+}
 
-    #formulario{       
-       margin: auto;
-       margin-bottom: 60px;
-    }
-
-    #contactos{       
-        margin: auto;
-        margin-bottom: 200px;
-     }
-
-    #mapa iframe{
-        width: 100%;
-    }
- }
+/*# sourceMappingURL=contacto.css.map */
