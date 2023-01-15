@@ -1,10 +1,17 @@
-#redes ul{
-    list-style: none;
-}
+#redes{
+    
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
 
-#redes img{
-    width: 60px;
-    height: 60px;
+    ul{
+        list-style: none;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .footer{
@@ -18,16 +25,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
-.footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#redes{
-    
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-}
