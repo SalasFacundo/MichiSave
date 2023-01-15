@@ -1,42 +1,40 @@
-nav{
-    display: grid;
-    position: sticky; 
-    top: 0; 
-    grid-template-columns: repeat(2, 1fr);
-    background-color: white; 
-    border-bottom: 1px solid rgba(45,45,45,.1);
-    z-index: 1;
-    padding: 14px 17px;
+nav {
+  display: grid;
+  position: sticky;
+  top: 0;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+  z-index: 1;
+  padding: 14px 17px;
 }
 
-
-#links{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+#links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#links a {
+  margin-right: 80px;
+  text-decoration: none;
+  color: grey;
+  border-bottom: 2px solid transparent;
+}
+#links :hover {
+  transition: 1s;
+  border-color: grey;
 }
 
-#links a{
-    margin-right: 80px;
-    text-decoration: none;
-    color: grey;    
-    border-bottom: 2px solid transparent;
+nav img {
+  float: left;
+  width: 205px;
+  height: 109px;
+}
+nav span {
+  display: inline-block;
+  margin-top: 4%;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-#links a:hover{
-    transition: 1s;
-    border-color: grey;   
-}
-
-nav img{
-    float: left; 
-    width: 205px;
-    height: 109px;   
- }
-
-nav span{
-    display: inline-block;
-   margin-top: 4%;  
-   font-weight: bold;
-   font-size: 18px;
-}
+/*# sourceMappingURL=navbar.css.map */
