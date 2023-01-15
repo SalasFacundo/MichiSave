@@ -5,6 +5,13 @@
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.header,
+.title,
+#separador,
+.footer {
+  grid-column: 1/6;
+}
+
 .navbar {
   display: grid;
   grid-column: 1/6;
@@ -26,11 +33,10 @@
   margin-right: 10px;
 }
 
-.header,
-.title,
-#separador,
-.footer {
-  grid-column: 1/6;
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
 }
 
 .pagina {
@@ -41,9 +47,6 @@
   background-attachment: fixed;
   position: relative;
   min-height: 100vh;
-}
-.pagina .title {
-  margin: 60px auto;
 }
 
 #formulario {
