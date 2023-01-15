@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pagina{
+    background-image: url("../img/gatosFondo.jpg");
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+
+
+.header,
+.title,
+.availables,
+.available,
+#links,
+#logo,
+.pagina,
+#formulario,
+#contactos,
+.imagen,
+.descripcion,
+.links,
+#separador,
+#telefono2,
+#email2,
+#ubicacion,
+#mapa{
+   /* border: 1px solid black;  */ 
+}
+
+.header,
+.title,
+#separador,
+.footer
+{   
+    grid-column: 1/6;
+}
+
+
+
+/* FIN MAQUETADO CSS GRID */
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+
+#separador{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+#separador hr{
+    width: 50%;
+}
+
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    border: 1px solid rgb(167, 165, 165);
+    border-style: dashed;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+/* form{
+    float: left;
+    width: 90%;
+    height: 100%;
+} */
+
+input[type=text],input[type=number], input[type=email], textarea, button{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 20px;
+    background-color: white;
+    resize:none;
+}
+
+/* input[type=file]{
+    display: none;
+} */
+
+#file{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;    
+    width: 100%;    
+    padding: 20px;
+}
+
+#file label{
+font-size: 14px;
+ font-weight: bold;
+ color: #fff;
+ background-color: #767e83;
+ cursor: pointer;
+ padding: 15px 40px;
+ text-align: center; 
+ border-radius: 10px;
+}
+
+#checkboxs{    
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#checkboxs label{
+    margin-right: 7px;
+}
+
+button{
+    cursor: pointer; 
+    margin-bottom: 60px;
+}
+
+button:active{
+    background-color: rgb(209, 204, 204);
+    color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+} 
+
+iframe{
+    width: 200%;
+}
+
+
+/* .estilosForm{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.estilosForm input, .estilosForm textarea {
+    width: 100%;
+}
+ */
+
+
+
+/* .form-group{
+    background-color: green;
+    width: 100%;
+}
+ */
+
+ form{
+    margin: auto;
+    margin-top: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(167, 165, 165);
+    border-style: dashed;
+    border-radius: 12px;
+    min-width: 400px;
+ }
+
+ form > input{
+    width: 100%;
+ }
+
+ .modificarFormGroup{
+    display: flex;
+    justify-content: center;    
+ }
+
+ .checkGroup{
+    display: flex;
+    justify-content: start;
+ }
+
+ .modificarFile{
+    margin: 60px auto;
+    width: 80%;
+ }
+
+ .modificarNavbar img{
+    vertical-align: text-bottom;
+    width: 100%;
+}
+
+ .modificarNavbar span{
+    color: black;
+ }
+
+ .modificarNavbar a{
+    color: grey;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+ }
+
+ .modificarNavbar a:hover{
+    transition: 1s;
+    border-color: grey;  
+ }
+
+ .space {
+    margin-right: 10px;
+}
+ 
+ @media (width<1052px){
+    form{
+        width: 400px;
+     }
+ }
+
