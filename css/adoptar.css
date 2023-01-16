@@ -70,12 +70,12 @@ body .disponibles .disponible .botones {
   width: 100%;
 }
 body .disponibles .disponible .botones .botonHembra {
-  background-color: pink;
+  background-color: rgb(255, 192, 203);
   border: none;
   color: white;
 }
 body .disponibles .disponible .botones .botonMacho {
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
   border: none;
 }
 body .disponibles .disponible .lista {
