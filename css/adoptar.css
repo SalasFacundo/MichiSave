@@ -64,7 +64,7 @@ body .disponibles h4 {
   text-align: center;
 }
 body .disponibles .disponible {
-  margin: 60px;
+  margin-bottom: 30px;
 }
 body .disponibles .disponible .botones {
   width: 100%;
