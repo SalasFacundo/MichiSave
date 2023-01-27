@@ -22,24 +22,28 @@ $formulario-border-color: rgb(167, 165, 165);
 }
 
 .modificarNavbar{
-
+    
     span{
         color: black;
     }
 
-    a{
+    .links a{
         color: grey;
         text-decoration: none;
         border-bottom: 2px solid transparent;
     }
 
-    a:hover{
+    .links a:hover{
         transition: 1s;
         border-color: grey;  
     }
 
     .space {
         margin-right: 10px;
+    }
+
+    .logo{
+        width: 25%;
     }
 
 }

@@ -32,7 +32,7 @@ body .modificarNavbar span {
   font-weight: bold;
   font-size: 18px;
 }
-body .modificarNavbar a {
+body .modificarNavbar .links a {
   color: grey;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -41,7 +41,7 @@ body .modificarNavbar img {
   vertical-align: text-bottom;
   width: 100%;
 }
-body .modificarNavbar a:hover {
+body .modificarNavbar .links a:hover {
   transition: 1s;
   border-color: grey;
 }
